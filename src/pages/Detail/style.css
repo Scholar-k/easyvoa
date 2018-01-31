@@ -1,0 +1,14 @@
+.left {
+	float: right;
+}
+.right {
+	float: right;
+}
+.describe {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
+.common {
+	text-align: center;
+}

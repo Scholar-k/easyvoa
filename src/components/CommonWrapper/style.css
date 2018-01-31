@@ -6,3 +6,9 @@
 .common .ant-menu-item {
 	line-height: 28px;
 }
+.common .txt {
+	min-width: 0;
+	min-height: 0;
+	margin-right: 18px;
+	text-align: center;
+}

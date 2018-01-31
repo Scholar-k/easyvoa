@@ -21,13 +21,70 @@ class CommonWrapper extends Component {
       					this.props.list.map((value) => {
       						return (
       							<Menu.Item key={value.id}>
-          						<Icon type="appstore"/>{value.title}
+          						{value.title}
         						</Menu.Item>
       						)
       					})
       				}
       			</Menu>
       		</Col>
+    		</Row>
+        <Row>
+          <Col span={15}>
+            <Menu mode="horizontal">
+              {
+                this.props.list.map((value) => {
+                  return (
+                    <Menu.Item key={value.ids}  className="txt">
+                      {value.txt}
+                    </Menu.Item>
+                  )
+                })
+              }
+            </Menu>
+          </Col>
+        </Row>
+    		<Row>
+      		<Col span={2}>
+            {this.props.list.title}
+            <Menu mode="horizontal">
+              {
+                this.props.list.map((value) => {
+                  return (
+                    <Menu.Item key={value.key}>
+                      {value.tit}
+                    </Menu.Item>
+                  )
+                })
+              }
+            </Menu>
+      		</Col>
+          <Col span={11}>
+            <Menu mode="horizontal">
+              {
+                this.props.list.map((value) => {
+                  return (
+                    <Menu.Item key={value.id}>
+                      {value.title}
+                    </Menu.Item>
+                  )
+                })
+              }
+            </Menu>
+          </Col>
+          <Col span={11}>
+            <Menu mode="horizontal">
+              {
+                this.props.list.map((value) => {
+                  return (
+                    <Menu.Item key={value.id}>
+                      {value.title}
+                    </Menu.Item>
+                  )
+                })
+              }
+            </Menu>
+          </Col>
     		</Row>
 
     		<div>{this.props.children}</div>
@@ -59,8 +116,8 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		changeList: (res) => {
 			var action = getChangeListAction(res.data.list)
-			dispatch(action)
-		}
+			dispatch(action)		
+    }
 	}
 }
 
