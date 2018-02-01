@@ -5,6 +5,7 @@ import store from '../store/'
 import { View as CommonWrapper } from '../components/CommonWrapper/'
 import { View as Home } from '../pages/Home/'
 import { View as Detail } from '../pages/Detail/'
+import { View as List } from '../pages/List/'
 
 import 'whatwg-fetch'
 import './reset.css'
@@ -19,4 +20,12 @@ export default class App extends Component {
 					<Router history={browserHistory}>
 						<Route path='/' component={CommonWrapper}>
 							<IndexRoute component={Home}></IndexRoute>
-							<Route path='detail/:id' component={Detail}></Route></Route></Router></Provider></div>)}}
+							<Route path='detail/:id' component={Detail}></Route>
+							<Route path='list(/:id)' component={List}></Route>
+						</Route>
+					</Router>
+				</Provider>
+			</div>
+		)
+	}
+}

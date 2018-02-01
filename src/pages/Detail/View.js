@@ -6,30 +6,32 @@ import './style.css'
 class Detail extends Component {
 	render() {
 		return (
-			<div className="common">
-				<h1>{this.props.title}</h1>
-				<p className="describe">
+			<div>
+				<h1  className="detail">{this.props.title}</h1>
+				<p className="describe detail">
 					<div className="left">{this.props.pubdate}</div>
 					<div className="left">{this.props.source}</div>
 					<div className="left">{this.props.count}</div>
 				</p>
-				<div className="right">{this.props.mp3}</div>
-				<canvas ref="canvas" width="300" height="300" float="left"></canvas>
+				<canvas ref="canvas" className="canva" 	width="300px"	height="300px"></canvas>
+				<video className="left vide" controls>
+					<source src={this.props.mp3}></source>
+				</video>
 				<div dangerouslySetInnerHTML={{__html:this.props.content}}></div>
 			</div>
 		)
 	}
 
 	componentDidMount() {
-    	this.Clock();
-    	this.getDetailInfo()
+  	this.Clock();
+  	this.getDetailInfo()
   }
 
   Clock() { 
-			this.canvas = this.refs.canvas;
-			this.ctx = this.canvas.getContext('2d');
-			this.time = new Date();
-			this.init()
+		this.canvas = this.refs.canvas;
+		this.ctx = this.canvas.getContext('2d');
+		this.time = new Date();
+		this.init()
 	}
 
 	init() {

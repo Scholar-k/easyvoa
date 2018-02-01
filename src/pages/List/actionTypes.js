@@ -1,0 +1,2 @@
+export const CHANGE_LIST = 'HOME/CHANGE_LIST'
+export const CHANGE_NAVLIST = 'HOME/CHANGE_NAVLIST'

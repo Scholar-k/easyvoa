@@ -1,0 +1,64 @@
+.top {
+  overflow: hidden;
+  width: 1024px;
+  height: 133px;
+}
+.top-leftcard{
+  float: left;
+  height:100%;
+}
+.top-rightcard{
+  float: right;
+  height:100%;
+}
+.nav {
+  overflow: hidden;
+  background: url(http://www.easyvoa.com/templets/images/studioclassroom/studio_nav_bg.png);
+}
+.listpage .list-nav {
+  height: 45px;
+  margin-left: 110px;
+  background: none;
+}
+.listpage .ant-menu-horizontal > .ant-menu-item {
+  border-bottom: 0;
+  width: 146px;
+  line-height: 45px;
+  text-align: center;
+}
+.listpage .ant-menu-horizontal > .ant-menu-item > a {
+  color: #cc0000;
+  text-decoration: none;
+  font-family: microsoft yahei;
+  font-size: 20px;
+  text-align: center;
+}
+.list-left {
+  margin: 30px 10px 10px 10px;
+  border: 3px solid #ec0012;
+  border-radius: 20px;
+}
+.list-right {
+  margin: 30px 10px 10px 0;
+  border: 3px solid #ec0012;
+  border-radius: 20px;
+}
+.list-right .ant-card {
+  background: none;
+  padding: 30px;
+}
+.list-right .ant-card-bordered {
+  border: none;
+}
+.list-right .ant-card-cover > * {
+  border: none;
+  width: 230px;
+}
+.img-title {
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
+.list-left-img {
+  margin: 55px 0 0 40px;
+}

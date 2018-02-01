@@ -1,0 +1,43 @@
+{
+  "ret": true,
+  "data": {
+    "list": [{
+      "id": "1001",
+      "title": "Trump to Attend Davos Meeting, Trade Likely a Top Issue",
+      "pubdate": "2018-01-24",
+      "category": "AS IT IS",
+      "link": "/detail/1001"
+    },{
+      "id": "1002",
+      "title": "Trump to Attend Davos Meeting, Trade Likely a Top Issue",
+      "pubdate": "2018-01-24",
+      "category": "AS IT IS",
+      "link": "/detail/1002"
+    },{
+      "id": "1003",
+      "title": "Trump to Attend Davos Meeting, Trade Likely a Top Issue",
+      "pubdate": "2018-01-24",
+      "category": "AS IT IS",
+      "link": "/detail/1003"
+    },{
+      "id": "1004",
+      "title": "Trump to Attend Davos Meeting, Trade Likely a Top Issue",
+      "pubdate": "2018-01-24",
+      "category": "AS IT IS",
+      "link": "/detail/1004"
+    }],
+    "navlist": [{
+      "id": "1001",
+      "title": "大家说英语",
+      "link": "/list/1001"
+    },{
+      "id": "1002",
+      "title": "空中英语教室",
+      "link": "/list/1002"
+    },{
+      "id": "1003",
+      "title": "彭蒙惠英语",
+      "link": "/list/1003"
+    }]
+  }
+}

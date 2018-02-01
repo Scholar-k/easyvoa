@@ -4,6 +4,7 @@ import { getChangeListAction } from './actionCreator'
 import { connect } from 'react-redux'
 import { browserHistory } from 'react-router'
 import Footer from './components/Footer'
+import { Link } from 'react-router'
 import './style.css'
 
 class CommonWrapper extends Component {
@@ -21,7 +22,7 @@ class CommonWrapper extends Component {
       					this.props.list.map((value) => {
       						return (
       							<Menu.Item key={value.id}>
-          						{value.title}
+          						<Link to={value.link}>{value.title}</Link>
         						</Menu.Item>
       						)
       					})
