@@ -28,10 +28,10 @@ class Listpage extends Component {
         <div className="nav">
           <Menu mode="horizontal" className="list-nav">
             {
-              this.props.navlist.map((value) => {
+              this.props.list.map((value) => {
                 return (
                   <Menu.Item key={value.id}>
-                    <Link to={value.link}>{value.title}</Link>
+                    <Link to={value.link}>{value.category}</Link>
                   </Menu.Item>
                 )
               })
